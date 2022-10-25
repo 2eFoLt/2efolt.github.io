@@ -10,8 +10,20 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="container d-flex direction-column">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Форма обратной связи</a></li>
+                    <li><a href="auth.html">Форма аутентификации</a></li>
+                </ul>
+            </nav>
+            <!--<div class="profile">
+                <a href="auth.html">Login</a>
+            </div>-->
+        </div>
+    </header>
     <main class="main-centered">
-        <h1 class="header-main">Форма аутентификации</h1>
         <div class="container-centered">
             <h2>Пожалуйста, войдите:</h2>
             <form method="POST" action="http://httpbin.org/post" enctype="multipart/form-data">

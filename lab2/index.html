@@ -8,8 +8,21 @@
         <title>Форма обратной связи</title>
     </head>
     <body>
+        <header class="header">
+            <div class="container d-flex direction-column">
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="index.html">Форма обратной связи</a></li>
+                        <li><a href="auth.html">Форма аутентификации</a></li>
+                    </ul>
+                </nav>
+                <!--<div class="profile">
+                    <a href="auth.html">Login</a>
+                </div>-->
+            </div>
+        </header>
         <main>
-            <h1 class="header-main">Форма обратной связи</h1>
+            
             <div class="container">
                 <form method="POST" action="http://httpbin.org/post" enctype="multipart/form-data">
                     <input type="hidden" name="user_id" value="12">
