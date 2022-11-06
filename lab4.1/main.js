@@ -150,13 +150,13 @@ function evaluate() {
             let a = stack.pop();
             let b = stack.pop();
             if(comp[i] === "+") {
-                stack.push(parseFloat(a) + parseFloat(b)).toFixed(3);
+                stack.push(parseFloat(a) + parseFloat(b));
             } else if(comp[i] === "-") {
-                stack.push(parseFloat(b) - parseFloat(a)).toFixed(3);
+                stack.push(parseFloat(b) - parseFloat(a));
             } else if(comp[i] === "*") {
-                stack.push(parseFloat(a) * parseFloat(b)).toFixed(3);
+                stack.push(parseFloat(a) * parseFloat(b));
             } else if(comp[i] === "/") {
-                stack.push(parseFloat(b) / parseFloat(a)).toFixed(3);
+                stack.push(parseFloat(b) / parseFloat(a));
             }
         }
     }
@@ -164,7 +164,7 @@ function evaluate() {
         getDisplay().innerText = "ERROR";
     }
     else {
-        getDisplay().innerText = stack[0];
+        getDisplay().innerText = stack[0].toFixed(2);
     }
 }
 
